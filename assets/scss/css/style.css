@@ -7,7 +7,7 @@
 body {
   background-color: white;
   font-family: sans-serif;
-  width: 82vh;
+  width: 80%;
   margin: auto;
 }
 
@@ -23,10 +23,9 @@ nav {
 nav ul {
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-end;
   width: 80%;
-  padding: 1%;
-  margin-left: 15%;
+  padding: 1vh;
+  margin-left: 15vw;
   vertical-align: bottom;
 }
 
@@ -36,13 +35,13 @@ nav li {
 
 nav li:nth-child(1) {
   align-self: flex-end;
-  font-size: 12px;
+  font-size: 12em;
   margin-left: auto;
 }
 
 nav a {
   display: block;
-  padding: 6px 12px;
+  padding: 6em 12em;
   text-decoration: none;
 }
 
@@ -50,8 +49,6 @@ nav a {
 header section {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 header section .imgimg {
@@ -67,11 +64,11 @@ header section .imgimg {
 header section h1 {
   background-color: #eb9510;
   border-radius: 5px;
-  border: #fff solid 1px;
-  width: 50%;
+  border: white solid 1vw;
+  width: 50vw;
   text-align: center;
-  padding: 15px;
-  color: #fff;
+  padding: 1vh;
+  color: rgb 255, 255, 255;
   margin-left: 15%;
   margin-top: 15px;
   font-size: 20px;
@@ -80,11 +77,11 @@ header section h1 {
 header section .buton {
   background-color: #eb9510;
   border-radius: 5px;
-  border: #fff solid 1px;
+  border: white solid 1px;
   width: 50%;
   text-align: center;
   padding: 15px;
-  color: #fff;
+  color: rgb 255, 255, 255;
   margin-left: 15%;
   margin-top: 15px;
   font-size: 20px;
@@ -102,7 +99,6 @@ main section {
 main section h2 {
   text-align: center;
   background-color: white;
-  text-align: center;
   font-weight: 400;
   letter-spacing: -1px;
   padding: 15px;
@@ -116,8 +112,8 @@ main section article h3 {
 main section article h3 .boite1 {
   background-color: #1e93cc;
   display: flex;
-  flex-wrap: row wrap;
-  color: #fff;
+  flex-flow: row wrap;
+  color: rgb 255, 255, 255;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
@@ -152,14 +148,14 @@ main .content3 ul {
   flex-flow: row wrap;
   align-items: flex-end;
   justify-content: center;
-  width: 85%;
+  width: 85vw;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 main .content3 li {
@@ -189,7 +185,7 @@ main .content4 button {
   background: #165882;
   border-radius: 5px;
   margin-right: 5%;
-  color: #fff;
+  color: rgb 255, 255, 255;
   font-size: 20px;
   border: none;
   padding: 2%;
@@ -207,7 +203,7 @@ footer {
   margin-right: auto;
   margin-bottom: 0;
   display: flex;
-  color: #fff;
+  color: rgb 255, 255, 255;
   padding-bottom: 15px;
 }
 

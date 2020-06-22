@@ -1,30 +1,5 @@
-//color variable
-$colorWithe : rgb (255,255,255);
-
-// backgroundColor variables
-$backgroundWithe: rgb(255,255,255);
-
-
-
-//creation variable
-@mixin flexRow{
-    display:flex;
-    flex-flow: row wrap;
-}
-
-@mixin flexEnd{
-    display:flex;
-    flex-flow: row wrap;
-    align-items:flex-end;
-}
-
-@mixin flexCenter{
-    display:flex;
-    flex-flow: row wrap;
-    align-items:center;
-    justify-content:center;
-}
-
+@import "_color.scss";
+@import "mixin.scss";
 
 
 * {
@@ -36,23 +11,23 @@ $backgroundWithe: rgb(255,255,255);
 body{
     background-color: $backgroundWithe;
     font-family : sans-serif;
-    width:82vh;
+    width:(100-20)*1%;
     margin:auto;
 }
 
 /* navBar*/
 nav {
     background-color : #333333;
-    width : 75%;
+    width : (100-25)*1%;
     margin-left : auto;
     margin-right : auto;
     display : flex;
 
     ul {
         @include flexRow;
-        width : 80%;
-        padding : 1%;
-        margin-left : 15%;
+        width : (100-20)*1%;
+        padding : 1vh;
+        margin-left : 15vw;
         vertical-align:bottom;
     }
   
@@ -61,21 +36,21 @@ nav {
         
             &:nth-child(1){
                 align-self:flex-end;
-                font-size:12px;
+                font-size:12em;
                 margin-left:auto;
             }
         }
   
     a {
       display: block;
-      padding: 6px 12px;
+      padding: 6em 12em;
       text-decoration: none;
     }
   }
 /* header*/
 header{
     section{
-        @include flexCenter;
+        @include flexRow;
 
         .imgimg{
             content : '';
@@ -90,10 +65,10 @@ header{
         h1{
             background-color : rgb(235, 149, 16);
             border-radius : 5px;
-            border : $backgroundWithe solid 1px;
-            width : 50%;
+            border : $backgroundWithe solid 1vw;
+            width : 50vw;
             text-align : center;
-            padding : 15px;
+            padding : 1vh;
             color : $colorWithe;
             margin-left : 15%;
             margin-top : 15px;
@@ -171,14 +146,14 @@ main{
         }
 
         ul{
-            @include FlexEnd;
+            @include flexEnd;
             justify-content: center;
-            width:85%;
+            width:85vw;
             margin-left:auto;margin-right:auto;
             flex-wrap:wrap;
             margin-left:auto;margin-right:auto;
-            margin-top:3%;
-            margin-bottom:3%;
+            margin-top:3vh;
+            margin-bottom:3vh;
         }
 
         li{
@@ -223,7 +198,7 @@ main{
   /* pied de page*/
 footer{
     background-color : #222222;
-    width : 75%;
+    width : (100-25)*1%;
     margin-left : auto;
     margin-right : auto;
     margin-bottom : 0;

@@ -1,0 +1,18 @@
+//creation variable
+@mixin flexRow{
+    display:flex;
+    flex-flow: row wrap;
+}
+
+@mixin flexEnd{
+    display:flex;
+    flex-flow: row wrap;
+    align-items:flex-end;
+}
+
+@mixin flexCenter{
+    display:flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content:center;
+}
